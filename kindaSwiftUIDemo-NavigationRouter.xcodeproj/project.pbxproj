@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C924AC6629B45D2700D92F36 /* kindaSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C924AC6529B45D2700D92F36 /* kindaSwiftUI */; };
+		C92B05DA29AFC45100264234 /* FruitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B05D929AFC45100264234 /* FruitsView.swift */; };
+		C95D748E29ACC1B100A8A2FD /* NavigationRouterSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D748D29ACC1B100A8A2FD /* NavigationRouterSetup.swift */; };
+		C95D749A29ACC1BB00A8A2FD /* CakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749029ACC1BB00A8A2FD /* CakeView.swift */; };
+		C95D749B29ACC1BB00A8A2FD /* PopcornView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749129ACC1BB00A8A2FD /* PopcornView.swift */; };
+		C95D749C29ACC1BB00A8A2FD /* DoughnutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749229ACC1BB00A8A2FD /* DoughnutView.swift */; };
+		C95D749D29ACC1BB00A8A2FD /* KiwiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749329ACC1BB00A8A2FD /* KiwiView.swift */; };
+		C95D749E29ACC1BB00A8A2FD /* JunkFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749429ACC1BB00A8A2FD /* JunkFoodView.swift */; };
+		C95D749F29ACC1BB00A8A2FD /* HoneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749529ACC1BB00A8A2FD /* HoneyView.swift */; };
+		C95D74A029ACC1BB00A8A2FD /* CookieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749629ACC1BB00A8A2FD /* CookieView.swift */; };
+		C95D74A129ACC1BB00A8A2FD /* IceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749729ACC1BB00A8A2FD /* IceCreamView.swift */; };
+		C95D74A229ACC1BB00A8A2FD /* ChocolateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749829ACC1BB00A8A2FD /* ChocolateView.swift */; };
+		C95D74A329ACC1BB00A8A2FD /* CarrotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95D749929ACC1BB00A8A2FD /* CarrotView.swift */; };
+		C97D481229A67867004A0B26 /* kindaSwiftUIDemo_NavigationRouterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D481129A67867004A0B26 /* kindaSwiftUIDemo_NavigationRouterApp.swift */; };
+		C97D481429A67867004A0B26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D481329A67867004A0B26 /* ContentView.swift */; };
+		C97D481629A67868004A0B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97D481529A67868004A0B26 /* Assets.xcassets */; };
+		C97D481929A67868004A0B26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C97D481829A67868004A0B26 /* Preview Assets.xcassets */; };
+		C97D482629A67EA6004A0B26 /* KindaSwiftUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C97D482529A67EA6004A0B26 /* KindaSwiftUI-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C92B05D929AFC45100264234 /* FruitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsView.swift; sourceTree = "<group>"; };
+		C95D748D29ACC1B100A8A2FD /* NavigationRouterSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouterSetup.swift; sourceTree = "<group>"; };
+		C95D749029ACC1BB00A8A2FD /* CakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeView.swift; sourceTree = "<group>"; };
+		C95D749129ACC1BB00A8A2FD /* PopcornView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopcornView.swift; sourceTree = "<group>"; };
+		C95D749229ACC1BB00A8A2FD /* DoughnutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoughnutView.swift; sourceTree = "<group>"; };
+		C95D749329ACC1BB00A8A2FD /* KiwiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KiwiView.swift; sourceTree = "<group>"; };
+		C95D749429ACC1BB00A8A2FD /* JunkFoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JunkFoodView.swift; sourceTree = "<group>"; };
+		C95D749529ACC1BB00A8A2FD /* HoneyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoneyView.swift; sourceTree = "<group>"; };
+		C95D749629ACC1BB00A8A2FD /* CookieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieView.swift; sourceTree = "<group>"; };
+		C95D749729ACC1BB00A8A2FD /* IceCreamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamView.swift; sourceTree = "<group>"; };
+		C95D749829ACC1BB00A8A2FD /* ChocolateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChocolateView.swift; sourceTree = "<group>"; };
+		C95D749929ACC1BB00A8A2FD /* CarrotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrotView.swift; sourceTree = "<group>"; };
+		C97D480E29A67867004A0B26 /* kindaSwiftUIDemo-NavigationRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kindaSwiftUIDemo-NavigationRouter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C97D481129A67867004A0B26 /* kindaSwiftUIDemo_NavigationRouterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kindaSwiftUIDemo_NavigationRouterApp.swift; sourceTree = "<group>"; };
+		C97D481329A67867004A0B26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C97D481529A67868004A0B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C97D481829A67868004A0B26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C97D482529A67EA6004A0B26 /* KindaSwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KindaSwiftUI-Info.plist"; sourceTree = "<group>"; };
+		C97D482729A67FF4004A0B26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C97D480B29A67867004A0B26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C924AC6629B45D2700D92F36 /* kindaSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C95D748F29ACC1BB00A8A2FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C95D749029ACC1BB00A8A2FD /* CakeView.swift */,
+				C95D749129ACC1BB00A8A2FD /* PopcornView.swift */,
+				C95D749229ACC1BB00A8A2FD /* DoughnutView.swift */,
+				C95D749329ACC1BB00A8A2FD /* KiwiView.swift */,
+				C95D749429ACC1BB00A8A2FD /* JunkFoodView.swift */,
+				C95D749529ACC1BB00A8A2FD /* HoneyView.swift */,
+				C95D749629ACC1BB00A8A2FD /* CookieView.swift */,
+				C95D749729ACC1BB00A8A2FD /* IceCreamView.swift */,
+				C95D749829ACC1BB00A8A2FD /* ChocolateView.swift */,
+				C95D749929ACC1BB00A8A2FD /* CarrotView.swift */,
+				C92B05D929AFC45100264234 /* FruitsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C97D480529A67867004A0B26 = {
+			isa = PBXGroup;
+			children = (
+				C97D481029A67867004A0B26 /* kindaSwiftUIDemo-NavigationRouter */,
+				C97D480F29A67867004A0B26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C97D480F29A67867004A0B26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C97D480E29A67867004A0B26 /* kindaSwiftUIDemo-NavigationRouter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C97D481029A67867004A0B26 /* kindaSwiftUIDemo-NavigationRouter */ = {
+			isa = PBXGroup;
+			children = (
+				C97D482729A67FF4004A0B26 /* Info.plist */,
+				C97D481129A67867004A0B26 /* kindaSwiftUIDemo_NavigationRouterApp.swift */,
+				C97D481329A67867004A0B26 /* ContentView.swift */,
+				C95D748D29ACC1B100A8A2FD /* NavigationRouterSetup.swift */,
+				C95D748F29ACC1BB00A8A2FD /* Views */,
+				C97D481529A67868004A0B26 /* Assets.xcassets */,
+				C97D482529A67EA6004A0B26 /* KindaSwiftUI-Info.plist */,
+				C97D481729A67868004A0B26 /* Preview Content */,
+			);
+			path = "kindaSwiftUIDemo-NavigationRouter";
+			sourceTree = "<group>";
+		};
+		C97D481729A67868004A0B26 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C97D481829A67868004A0B26 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C97D480D29A67867004A0B26 /* kindaSwiftUIDemo-NavigationRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97D481C29A67868004A0B26 /* Build configuration list for PBXNativeTarget "kindaSwiftUIDemo-NavigationRouter" */;
+			buildPhases = (
+				C97D480A29A67867004A0B26 /* Sources */,
+				C97D480B29A67867004A0B26 /* Frameworks */,
+				C97D480C29A67867004A0B26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kindaSwiftUIDemo-NavigationRouter";
+			packageProductDependencies = (
+				C924AC6529B45D2700D92F36 /* kindaSwiftUI */,
+			);
+			productName = "kindaSwiftUIDemo-NavigationRouter";
+			productReference = C97D480E29A67867004A0B26 /* kindaSwiftUIDemo-NavigationRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C97D480629A67867004A0B26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C97D480D29A67867004A0B26 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C97D480929A67867004A0B26 /* Build configuration list for PBXProject "kindaSwiftUIDemo-NavigationRouter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C97D480529A67867004A0B26;
+			packageReferences = (
+				C924AC6429B45D2700D92F36 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */,
+			);
+			productRefGroup = C97D480F29A67867004A0B26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C97D480D29A67867004A0B26 /* kindaSwiftUIDemo-NavigationRouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C97D480C29A67867004A0B26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C97D481929A67868004A0B26 /* Preview Assets.xcassets in Resources */,
+				C97D482629A67EA6004A0B26 /* KindaSwiftUI-Info.plist in Resources */,
+				C97D481629A67868004A0B26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C97D480A29A67867004A0B26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95D749E29ACC1BB00A8A2FD /* JunkFoodView.swift in Sources */,
+				C95D749A29ACC1BB00A8A2FD /* CakeView.swift in Sources */,
+				C97D481429A67867004A0B26 /* ContentView.swift in Sources */,
+				C95D74A129ACC1BB00A8A2FD /* IceCreamView.swift in Sources */,
+				C95D749F29ACC1BB00A8A2FD /* HoneyView.swift in Sources */,
+				C92B05DA29AFC45100264234 /* FruitsView.swift in Sources */,
+				C95D74A329ACC1BB00A8A2FD /* CarrotView.swift in Sources */,
+				C97D481229A67867004A0B26 /* kindaSwiftUIDemo_NavigationRouterApp.swift in Sources */,
+				C95D749D29ACC1BB00A8A2FD /* KiwiView.swift in Sources */,
+				C95D74A029ACC1BB00A8A2FD /* CookieView.swift in Sources */,
+				C95D749B29ACC1BB00A8A2FD /* PopcornView.swift in Sources */,
+				C95D749C29ACC1BB00A8A2FD /* DoughnutView.swift in Sources */,
+				C95D748E29ACC1B100A8A2FD /* NavigationRouterSetup.swift in Sources */,
+				C95D74A229ACC1BB00A8A2FD /* ChocolateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C97D481A29A67868004A0B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C97D481B29A67868004A0B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C97D481D29A67868004A0B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kindaSwiftUIDemo-NavigationRouter/Preview Content\"";
+				DEVELOPMENT_TEAM = R252PR8AVU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kindaSwiftUIDemo-NavigationRouter/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rebeloper.kindaSwiftUIDemo-NavigationRouter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C97D481E29A67868004A0B26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"kindaSwiftUIDemo-NavigationRouter/Preview Content\"";
+				DEVELOPMENT_TEAM = R252PR8AVU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "kindaSwiftUIDemo-NavigationRouter/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rebeloper.kindaSwiftUIDemo-NavigationRouter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C97D480929A67867004A0B26 /* Build configuration list for PBXProject "kindaSwiftUIDemo-NavigationRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97D481A29A67868004A0B26 /* Debug */,
+				C97D481B29A67868004A0B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97D481C29A67868004A0B26 /* Build configuration list for PBXNativeTarget "kindaSwiftUIDemo-NavigationRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C97D481D29A67868004A0B26 /* Debug */,
+				C97D481E29A67868004A0B26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C924AC6429B45D2700D92F36 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloperAlpar/kindaSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C924AC6529B45D2700D92F36 /* kindaSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C924AC6429B45D2700D92F36 /* XCRemoteSwiftPackageReference "kindaSwiftUI" */;
+			productName = kindaSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C97D480629A67867004A0B26 /* Project object */;
+}
