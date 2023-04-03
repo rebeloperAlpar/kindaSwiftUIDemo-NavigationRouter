@@ -74,7 +74,7 @@ struct ChocolateView: View {
                 .navigationTitle("🍫")
                 #if os(iOS) || os(macOS)
                 .sheet(for: Destination.fruitsViewSheet(dependency: modalDependencyLinker.fruitViewDependency))
-                .sheet(for: Destination.honeyViewSheet, presentationDetents: [.medium, .large], presentationDragIndicatorVisibility: .visible) {
+                .sheet(for: Destination.honeyViewSheet, options: .init(detents: [.medium, .large], cornerRadius: 50, contentInteraction: .scrolls)) {
                     log(.debug, type: .developer, "🍯 sheet dismissed")
                 }
                 #endif

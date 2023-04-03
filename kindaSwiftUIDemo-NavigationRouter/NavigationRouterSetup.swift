@@ -111,6 +111,7 @@ public enum Destination: RouterDestination {
             PopcornView()
         case .honeyViewSheet:
             HoneyView()
+                .presentationBackground(.ultraThinMaterial)
 #if os(iOS) || os(watchOS)
         case .honeyViewFullScreenCover:
             HoneyView()

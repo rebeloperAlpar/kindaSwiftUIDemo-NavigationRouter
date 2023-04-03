@@ -52,7 +52,7 @@ struct HoneyView: View {
                 }
                 .navigationTitle("🍯")
                 #if os(iOS) || os(macOS)
-                .sheet(for: Destination.iceCreamViewSheet, presentationDetents: [.fraction(0.4)])
+                .sheet(for: Destination.iceCreamViewSheet, options: .init(detents: [.fraction(0.4)]))
                 .sheet(for: Destination.fruitsViewSheetFromHoneyView(dependency: modalDependencyLinker.fruitViewDependency))
                 #endif
             }
