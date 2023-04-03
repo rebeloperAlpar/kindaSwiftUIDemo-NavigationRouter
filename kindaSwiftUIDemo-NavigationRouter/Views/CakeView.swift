@@ -10,48 +10,50 @@ import kindaSwiftUI
 
 struct CakeView: View {
     
-    @EnvironmentObject private var router: Router<Destination>
     @EnvironmentObject private var modalDependencyLinker: ModalDependencyLinker
     
     @State private var didPresentDeepLink = false
     
     var body: some View {
-        List {
-            Section {
-                Button("Push 🍩") {
-                    router.push(.doughnutView)
+        Page<Destination, Group> { context in
+            Group {
+                List {
+                    Section {
+                        Button("Push 🍩") {
+                            context.router.push(.doughnutView)
+                        }
+                    } header: {
+                        Text("Push")
+                    }
                 }
-            } header: {
-                Text("Push")
+                .navigationTitle("🎂")
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                        deepLink(context)
+                    })
+                }
             }
-        }
-        .navigationTitle("🎂")
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-                deepLink()
-            })
         }
     }
     
-    func deepLink() {
+    func deepLink(_ context: PageContext<Destination>) {
         guard !didPresentDeepLink else { return }
         log(.debug, type: .developer, "Presenting deep link")
         Task {
-            await router.push(.doughnutView)
-            await router.push(.junkFoodView(dependency: "🍕"))
-            await router.push(.chocolateView)
+            await context.router.push(.doughnutView)
+            await context.router.push(.junkFoodView(dependency: "🍕"))
+            await context.router.push(.chocolateView)
             #if os(iOS) || os(macOS)
-            await router.present(.honeyViewSheet)
-            await router.present(.fruitsViewSheetFromHoneyView(dependency: "🍉"), dependencyLink: $modalDependencyLinker.fruitViewDependency)
+            await context.router.present(.honeyViewSheet)
+            await context.router.present(.fruitsViewSheetFromHoneyView(dependency: "🍉"), dependencyLink: $modalDependencyLinker.fruitViewDependency)
             #elseif os(watchOS)
-            await router.present(.honeyViewFullScreenCover)
-            await router.present(.fruitsViewFullScreenCoverFromHoneyView(dependency: "🍉"), dependencyLink: $modalDependencyLinker.fruitViewDependency)
+            await context.router.present(.honeyViewFullScreenCover)
+            await context.router.present(.fruitsViewFullScreenCoverFromHoneyView(dependency: "🍉"), dependencyLink: $modalDependencyLinker.fruitViewDependency)
             #elseif os(tvOS)
-            await router.push(.honeyViewSheet)
-            await router.push(.fruitsViewSheetFromHoneyView(dependency: "🍉"))
+            await context.router.push(.honeyViewSheet)
+            await context.router.push(.fruitsViewSheetFromHoneyView(dependency: "🍉"))
             #endif
             didPresentDeepLink.toggle()
         }
     }
 }
-

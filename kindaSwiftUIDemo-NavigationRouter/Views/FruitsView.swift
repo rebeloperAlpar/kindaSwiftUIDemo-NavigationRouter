@@ -10,21 +10,23 @@ import kindaSwiftUI
 
 struct FruitsView: View {
     
-    @EnvironmentObject private var router: Router<Destination>
-    
     let title: String
     
     var body: some View {
-        List {
-            Section {
-                Button("Pop") {
-                    router.pop()
+        Page<Destination, Group> { context in
+            Group {
+                List {
+                    Section {
+                        Button("Pop") {
+                            context.router.pop()
+                        }
+                    } header: {
+                        Text("Pop")
+                    }
                 }
-            } header: {
-                Text("Pop")
+                .navigationTitle(title)
             }
         }
-        .navigationTitle(title)
     }
 }
 

@@ -10,49 +10,51 @@ import kindaSwiftUI
 
 struct KiwiView: View {
     
-    @EnvironmentObject private var router: Router<Destination>
-    
     var body: some View {
-        List {
-            Section {
-                Button("Pop") {
-                    router.pop()
+        Page<Destination, Group> { context in
+            Group {
+                List {
+                    Section {
+                        Button("Pop") {
+                            context.router.pop()
+                        }
+                    } header: {
+                        Text("Pop")
+                    }
+                    
+                    Section {
+                        Button("Pop the last 10") {
+                            context.router.pop(.the(last: 10))
+                        }
+                        
+                        Button("Pop to index -5") {
+                            context.router.pop(.to(index: -5))
+                        }
+                        
+                        Button("Pop to index 10") {
+                            context.router.pop(.to(index: 10))
+                        }
+                        
+                        Button("Pop the last 10 (one by one)") {
+                            context.router.pop(.theLastWith(style: .oneByOne, last: 10))
+                        }
+                        
+                        Button("Pop to index -5 (one by one)") {
+                            context.router.pop(.toIndexWith(style: .oneByOne, index: -5))
+                        }
+                        
+                        Button("Pop to index 10 (one by one)") {
+                            context.router.pop(.toIndexWith(style: .oneByOne, index: 10))
+                        }
+                    } header: {
+                        Text("Invalid or out of range pops")
+                    }
+                    
                 }
-            } header: {
-                Text("Pop")
+                .navigationTitle("🥝")
+                .toolbar(.hidden, for: .tabBar)
             }
-            
-            Section {
-                Button("Pop the last 10") {
-                    router.pop(.the(last: 10))
-                }
-                
-                Button("Pop to index -5") {
-                    router.pop(.to(index: -5))
-                }
-                
-                Button("Pop to index 10") {
-                    router.pop(.to(index: 10))
-                }
-                
-                Button("Pop the last 10 (one by one)") {
-                    router.pop(.theLastWith(style: .oneByOne, last: 10))
-                }
-                
-                Button("Pop to index -5 (one by one)") {
-                    router.pop(.toIndexWith(style: .oneByOne, index: -5))
-                }
-                
-                Button("Pop to index 10 (one by one)") {
-                    router.pop(.toIndexWith(style: .oneByOne, index: 10))
-                }
-            } header: {
-                Text("Invalid or out of range pops")
-            }
-            
         }
-        .navigationTitle("🥝")
-        .toolbar(.hidden, for: .tabBar)
     }
 }
 

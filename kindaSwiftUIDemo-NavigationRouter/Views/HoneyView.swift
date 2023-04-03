@@ -10,50 +10,53 @@ import kindaSwiftUI
 
 struct HoneyView: View {
     
-    @EnvironmentObject private var router: Router<Destination>
     @EnvironmentObject private var modalDependencyLinker: ModalDependencyLinker
     
     var body: some View {
-        List {
-            Section {
-                Button("Pop") {
-                    router.pop()
+        Page<Destination, Group> { context in
+            Group {
+                List {
+                    Section {
+                        Button("Pop") {
+                            context.router.pop()
+                        }
+                        
+                        Button("Pop the last 2") {
+                            context.router.pop(.the(last: 2))
+                        }
+                        
+                        Button("Pop to root") {
+                            context.router.pop(.toRoot)
+                        }
+                    } header: {
+                        Text("Pop")
+                    }
+                    
+                    Section {
+                        Button("Push 🍪") {
+                            context.router.push(.cookieView)
+                        }
+                    } header: {
+                        Text("Push")
+                    }
+                    
+                    #if os(iOS) || os(macOS)
+                    Section {
+                        Button("Present 🍦 sheet") {
+                            context.router.present(.iceCreamViewSheet)
+                        }
+                    } header: {
+                        Text("Present")
+                    }
+                    #endif
                 }
-                
-                Button("Pop the last 2") {
-                    router.pop(.the(last: 2))
-                }
-                
-                Button("Pop to root") {
-                    router.pop(.toRoot)
-                }
-            } header: {
-                Text("Pop")
+                .navigationTitle("🍯")
+                #if os(iOS) || os(macOS)
+                .sheet(for: Destination.iceCreamViewSheet, presentationDetents: [.fraction(0.4)])
+                .sheet(for: Destination.fruitsViewSheetFromHoneyView(dependency: modalDependencyLinker.fruitViewDependency))
+                #endif
             }
-            
-            Section {
-                Button("Push 🍪") {
-                    router.push(.cookieView)
-                }
-            } header: {
-                Text("Push")
-            }
-            
-            #if os(iOS) || os(macOS)
-            Section {
-                Button("Present 🍦 sheet") {
-                    router.present(.iceCreamViewSheet)
-                }
-            } header: {
-                Text("Present")
-            }
-            #endif
         }
-        .navigationTitle("🍯")
-        #if os(iOS) || os(macOS)
-        .sheet(for: Destination.iceCreamViewSheet, presentationDetents: [.fraction(0.4)])
-        .sheet(for: Destination.fruitsViewSheetFromHoneyView(dependency: modalDependencyLinker.fruitViewDependency))
-        #endif
     }
 }
 

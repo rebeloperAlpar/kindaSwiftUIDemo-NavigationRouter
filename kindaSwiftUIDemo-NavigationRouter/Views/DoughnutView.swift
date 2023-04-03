@@ -10,28 +10,30 @@ import kindaSwiftUI
 
 struct DoughnutView: View {
     
-    @EnvironmentObject private var router: Router<Destination>
-    
     var body: some View {
-        List {
-            Section {
-                Button("Pop") {
-                    router.pop()
-                }
-            } header: {
-                Text("Pop")
-            }
+        Page<Destination, Group> { context in
+            Group {
+                List {
+                    Section {
+                        Button("Pop") {
+                            context.router.pop()
+                        }
+                    } header: {
+                        Text("Pop")
+                    }
 
-            Section {
-                Button("Push 🌭") {
-                    router.push(.junkFoodView(dependency: "🌭"))
+                    Section {
+                        Button("Push 🌭") {
+                            context.router.push(.junkFoodView(dependency: "🌭"))
+                        }
+                    } header: {
+                        Text("Push")
+                    }
+                    
                 }
-            } header: {
-                Text("Push")
+                .navigationTitle("🍩")
             }
-            
         }
-        .navigationTitle("🍩")
     }
 }
 

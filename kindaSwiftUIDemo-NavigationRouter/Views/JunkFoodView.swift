@@ -10,32 +10,34 @@ import kindaSwiftUI
 
 struct JunkFoodView: View {
     
-    @EnvironmentObject private var router: Router<Destination>
-    
     let title: String
     
     var body: some View {
-        List {
-            Section {
-                Button("Pop") {
-                    router.pop()
-                }
-                
-                Button("Pop the last 2") {
-                    router.pop(.the(last: 2))
-                }
-            } header: {
-                Text("Pop")
-            }
+        Page<Destination, Group> { context in
+            Group {
+                List {
+                    Section {
+                        Button("Pop") {
+                            context.router.pop()
+                        }
+                        
+                        Button("Pop the last 2") {
+                            context.router.pop(.the(last: 2))
+                        }
+                    } header: {
+                        Text("Pop")
+                    }
 
-            Section {
-                Button("Push 🍫") {
-                    router.push(.chocolateView)
+                    Section {
+                        Button("Push 🍫") {
+                            context.router.push(.chocolateView)
+                        }
+                    } header: {
+                        Text("Push")
+                    }
                 }
-            } header: {
-                Text("Push")
+                .navigationTitle(title)
             }
         }
-        .navigationTitle(title)
     }
 }
